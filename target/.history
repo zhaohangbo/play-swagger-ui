@@ -1,0 +1,8 @@
+version
+exit
+playVersion
+version
+exit
+play.core.PlayVersion.current();
+run 9001
+run 9002

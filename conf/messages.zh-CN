@@ -1,0 +1,7 @@
+api.application=应用
+application123=赵杭波的应用
+api.a=应用
+api.b=应用
+
+error.required=该字段必填
+welcome.meg=欢迎来到{0}省, {1}市.

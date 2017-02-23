@@ -1,0 +1,32 @@
+## do nothing
+
+GET     /                                           controllers.APIHome.gotoApiHome
+
+GET     /swagger.json                               controllers.ApiHelpController.getResources
+GET     /api/:path                                  controllers.ApiHelpController.getResource(path: String)
+
+## (default to english)
+## GET     /swagger.json                            controllers.ApiHelpController.getResources
+
+GET     /en/swagger.json                            controllers.ApiHelpController.getResources
+GET     /ch/swagger.json                            controllers.ApiHelpController.getResources
+GET     /swagger.json?lang=en                       controllers.ApiHelpController.getResources
+GET     /swagger.json?lang=fr                       controllers.ApiHelpController.getResources
+
+
+GET     /application                                controllers.Application.listProjects
+PUT     /application/projects/:name                 controllers.Application.createProject(name: String)
+GET     /application/projects/list                  controllers.Application.listProjects
+GET     /application/projects/:id                   controllers.Application.projects(id: Long)
+PUT     /application/projects/:id/:name             controllers.Application.addTaskToProject(name: String, id: Long)
+PATCH   /application/tasks/:id                      controllers.Application.modifyTask(id: Long, color:Option[String] = None)
+DELETE  /application/projects/:name                 controllers.Application.delete(name: String)
+
+
+GET     /public/swagger/dist/*file                         controllers.Assets.at(path ="/public/swagger/dist",file)
+GET     /public/swagger/dist/images/*file                  controllers.Assets.at(path ="/public/swagger/dist/images",file)
+GET     /public/swagger/dist/css/*file                     controllers.Assets.at(path ="/public/swagger/dist/css",file)
+GET     /public/swagger/dist/lib/*file                     controllers.Assets.at(path ="/public/swagger/dist/lib",file)
+GET     /public/swagger/dist/lang/*file                    controllers.Assets.at(path ="/public/swagger/dist/lang",file)
+GET     /public/swagger/dist/fonts/*file                   controllers.Assets.at(path ="/public/swagger/dist/fonts",file)
+

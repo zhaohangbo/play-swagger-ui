@@ -1,0 +1,166 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "IT运维, 网络监控, IOT应用, 商业分析, 定制开发您所需的应用",
+    "version" : "Version 1.8",
+    "title" : "日志易开放接口",
+    "contact" : {
+      "name" : "优特捷信息技术有限公司"
+    },
+    "license" : {
+      "name" : "",
+      "url" : "http://licenseUrl"
+    }
+  },
+  "host" : "localhost:9000",
+  "basePath" : "/",
+  "tags" : [ {
+    "name" : "application123"
+  } ],
+  "paths" : {
+    "/application/projects/list" : {
+      "get" : {
+        "tags" : [ "application123" ],
+        "operationId" : "listProjects",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Good response to get projects"
+          },
+          "400" : {
+            "description" : "Invalid Project ID supplied"
+          },
+          "404" : {
+            "description" : "Project not found"
+          }
+        }
+      }
+    },
+    "/application/projects/{id}" : {
+      "get" : {
+        "tags" : [ "application123" ],
+        "operationId" : "projects",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "ID of the project to fetch",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Good response to get projects"
+          },
+          "400" : {
+            "description" : "Invalid Project ID supplied"
+          },
+          "404" : {
+            "description" : "Project not found"
+          }
+        }
+      }
+    },
+    "/application/projects/{id}/{name}" : {
+      "put" : {
+        "tags" : [ "application123" ],
+        "operationId" : "addTaskToProject",
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ActionAnyContent"
+            },
+            "headers" : { }
+          }
+        }
+      }
+    },
+    "/application/projects/{name}" : {
+      "put" : {
+        "tags" : [ "application123" ],
+        "operationId" : "createProject",
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ActionAnyContent"
+            },
+            "headers" : { }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "application123" ],
+        "operationId" : "delete",
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "path",
+          "description" : "Name of the project to delete",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ActionAnyContent"
+            },
+            "headers" : { }
+          },
+          "400" : {
+            "description" : "Invalid Project Name supplied"
+          },
+          "404" : {
+            "description" : "Project not exist"
+          }
+        }
+      }
+    },
+    "/application/tasks/{id}" : {
+      "patch" : {
+        "tags" : [ "application123" ],
+        "operationId" : "modifyTask",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ActionAnyContent"
+            },
+            "headers" : { }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ActionAnyContent" : {
+      "type" : "object"
+    }
+  }
+}
