@@ -1,10 +1,10 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-slick3-example/conf/application.conf,/Users/hangbozhao/web/play/projects/play-slick3-example/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-slick3-example/conf/evolutions,/Users/hangbozhao/web/play/projects/play-slick3-example/target/scala-2.11/classes/evolutions)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-slick3-example/conf/logback.xml,/Users/hangbozhao/web/play/projects/play-slick3-example/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-slick3-example/conf/messages.en-US,/Users/hangbozhao/web/play/projects/play-slick3-example/target/scala-2.11/classes/messages.en-US)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-slick3-example/conf/messages.zh-CN,/Users/hangbozhao/web/play/projects/play-slick3-example/target/scala-2.11/classes/messages.zh-CN)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-slick3-example/conf/routes,/Users/hangbozhao/web/play/projects/play-slick3-example/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-slick3-example/conf/evolutions/testDB,/Users/hangbozhao/web/play/projects/play-slick3-example/target/scala-2.11/classes/evolutions/testDB)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-slick3-example/conf/evolutions/testDB/1.sql,/Users/hangbozhao/web/play/projects/play-slick3-example/target/scala-2.11/classes/evolutions/testDB/1.sql)[0m
-[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-slick3-example/conf/evolutions/testDB/2.sql,/Users/hangbozhao/web/play/projects/play-slick3-example/target/scala-2.11/classes/evolutions/testDB/2.sql)[0m
+[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/application.conf,/Users/hangbozhao/web/play/projects/play-swagger-ui/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/evolutions,/Users/hangbozhao/web/play/projects/play-swagger-ui/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/logback.xml,/Users/hangbozhao/web/play/projects/play-swagger-ui/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/messages.en-US,/Users/hangbozhao/web/play/projects/play-swagger-ui/target/scala-2.11/classes/messages.en-US)[0m
+[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/messages.zh-CN,/Users/hangbozhao/web/play/projects/play-swagger-ui/target/scala-2.11/classes/messages.zh-CN)[0m
+[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/routes,/Users/hangbozhao/web/play/projects/play-swagger-ui/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/evolutions/testDB,/Users/hangbozhao/web/play/projects/play-swagger-ui/target/scala-2.11/classes/evolutions/testDB)[0m
+[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/evolutions/testDB/1.sql,/Users/hangbozhao/web/play/projects/play-swagger-ui/target/scala-2.11/classes/evolutions/testDB/1.sql)[0m
+[0m[[0mdebug[0m] [0m	(/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/evolutions/testDB/2.sql,/Users/hangbozhao/web/play/projects/play-swagger-ui/target/scala-2.11/classes/evolutions/testDB/2.sql)[0m

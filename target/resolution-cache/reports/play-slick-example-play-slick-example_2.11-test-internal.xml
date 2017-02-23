@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170222175317"/>
+		date="20170223140957"/>
 	<dependencies>
 		<module organisation="org.scalatestplus.play" name="scalatestplus-play_2.11">
 			<revision name="1.5.0" status="release" pubdate="20160304041747" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/scalatestplus-play" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="131">
@@ -418,9 +418,9 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.dataformat" name="jackson-dataformat-yaml">
-			<revision name="2.8.4" status="release" pubdate="20161014123224" resolver="public" artresolver="public" homepage="https://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="69">
+			<revision name="2.8.4" status="release" pubdate="20161014123224" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="69">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="6163" time="1350" location="/Users/hangbozhao/.ivy2/cache/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/ivy-2.8.4.xml" searched="true" original-local-location="/Users/hangbozhao/.ivy2/cache/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/ivy-2.8.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.8.4/jackson-dataformat-yaml-2.8.4.pom"/>
+				<metadata-artifact status="no" details="" size="8856" time="0" location="/Users/hangbozhao/.ivy2/cache/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/ivy-2.8.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.8.4/jackson-dataformat-yaml-2.8.4.pom"/>
 				<caller organisation="io.swagger" name="swagger-core" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="1.5.12"/>
 				<artifacts>
 					<artifact name="jackson-dataformat-yaml" type="bundle" ext="jar" status="no" details="" size="40880" time="0" location="/Users/hangbozhao/.ivy2/cache/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/bundles/jackson-dataformat-yaml-2.8.4.jar">

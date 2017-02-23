@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/hangbozhao/web/play/projects/play-slick3-example/conf/routes
-// @DATE:Wed Feb 22 18:59:25 CST 2017
+// @SOURCE:/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/routes
+// @DATE:Thu Feb 23 14:10:00 CST 2017
 
 package controllers;
 
