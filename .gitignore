@@ -2,12 +2,9 @@
 .eclipse
 .idea
 .project
-/project/project
-/project/target
 /target
-project/project
-project/target
-target
+/project/project/*
+/project/target/*
 /__dest
 /lib/
 /logs/
