@@ -30,6 +30,7 @@
   <!-- <script src='lang/translator.js' type='text/javascript'></script> -->
   <!-- <script src='lang/ru.js' type='text/javascript'></script> -->
   <!-- <script src='lang/en.js' type='text/javascript'></script> -->
+  <!-- url = "http://127.0.0.1:8080/?act=get_resources"; -->
 
   <script type="text/javascript">
     $(function () {
@@ -37,7 +38,7 @@
       if (url && url.length > 1) {
         url = decodeURIComponent(url[1]);
       } else {
-        url = "http://127.0.0.1:8080/?act=get_resources";
+        url = "http://192.168.1.80:8080/?act=get_resources";
       }
 
       hljs.configure({

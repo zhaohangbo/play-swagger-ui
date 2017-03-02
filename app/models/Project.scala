@@ -11,6 +11,7 @@ import slick.driver.JdbcProfile
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
+/*
 case class Project(id: Long, name: String)
 
 class ProjectRepo @Inject()(taskRepo: TaskRepo)(@NamedDatabase("testDB")protected val dbConfigProvider: DatabaseConfigProvider) {
@@ -71,3 +72,4 @@ class ProjectRepo @Inject()(taskRepo: TaskRepo)(@NamedDatabase("testDB")protecte
 
   }
 }
+*/

@@ -7263,7 +7263,11 @@ Operation.prototype.urlify = function (args, maskPasswords) {
   }
 
   url = url.replace("9000", "8080");
+  url = url.replace("localhost", "192.168.1.80");
+  url = url.replace("127.0.0.1", "192.168.1.80");
   requestUrl = requestUrl.replace("9000", "8080");
+  requestUrl = requestUrl.replace("localhost", "192.168.1.80");
+  requestUrl = requestUrl.replace("127.0.0.1", "192.168.1.80");
   console.log(url);
   console.log(requestUrl);
   return url + requestUrl + querystring;

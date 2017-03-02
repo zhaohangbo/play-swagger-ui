@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/routes
-// @DATE:Thu Feb 23 14:10:00 CST 2017
+// @DATE:Fri Feb 24 14:53:18 CST 2017
 
 
 package router {

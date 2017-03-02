@@ -1,7 +1,7 @@
 package controllers
 
+/*
 import javax.inject.Inject
-
 import io.swagger.annotations.{Api, ApiParam, ApiResponse, ApiResponses}
 import io.swagger.models.Path
 import models.{ProjectRepo, TaskRepo}
@@ -73,3 +73,4 @@ class Application @Inject()( projectRepo: ProjectRepo, taskRepo: TaskRepo) exten
 
 
 }
+*/

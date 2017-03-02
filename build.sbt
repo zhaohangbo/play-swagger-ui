@@ -1,6 +1,6 @@
-name := """play-slick-example"""
+name := """play-swagger-ui"""
 
-version := "1.0-SNAPSHOT"
+version := "1.0"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
@@ -27,3 +27,15 @@ libraryDependencies += filters
 resolvers += "Sonatype snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 
 fork in run := true
+
+assemblyMergeStrategy in assembly := {
+    case PathList("javax", "servlet", xs @ _*)           => MergeStrategy.first
+    case x if x.endsWith("io.netty.versions.properties") => MergeStrategy.first
+    case "application.conf"                              => MergeStrategy.concat
+    case PathList(ps @ _*) if ps.last endsWith ".html"   => MergeStrategy.first
+    case "unwanted.txt"                                  => MergeStrategy.discard
+    case x =>
+        val oldStrategy = (assemblyMergeStrategy in assembly).value
+        oldStrategy(x)
+}
+

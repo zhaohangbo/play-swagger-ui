@@ -9,6 +9,7 @@ import slick.driver.JdbcProfile
 import scala.concurrent.Future
 
 
+/*
 
 case class Task(id: Long, color: String, project: Long) {//status: TaskStatus.Value
   def patch(color: Option[String], project: Option[Long]): Task =
@@ -83,3 +84,4 @@ class TaskRepo @Inject()(@NamedDatabase("testDB")protected val dbConfigProvider:
    */
 
 }
+*/

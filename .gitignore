@@ -2,7 +2,9 @@
 .eclipse
 .idea
 .project
+.target
 /target
+/target/*
 /project/project/*
 /project/target/*
 /__dest
@@ -13,7 +15,5 @@
 /db
 test-result
 server.pid
-*.eml
 .cache
-*.swp
 bin/

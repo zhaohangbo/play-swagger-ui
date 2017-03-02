@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/hangbozhao/web/play/projects/play-swagger-ui/conf/routes
-// @DATE:Thu Feb 23 14:10:00 CST 2017
+// @DATE:Fri Feb 24 14:53:18 CST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -48,7 +48,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:26
+  // @LINE:13
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -56,7 +56,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:26
+    // @LINE:13
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """
@@ -106,80 +106,6 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:17
-  class ReverseApplication(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:21
-    def addTaskToProject: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.addTaskToProject",
-      """
-        function(name0,id1) {
-          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "application/projects/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id1) + "/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("name", encodeURIComponent(name0))})
-        }
-      """
-    )
-  
-    // @LINE:23
-    def delete: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.delete",
-      """
-        function(name0) {
-          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "application/projects/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("name", encodeURIComponent(name0))})
-        }
-      """
-    )
-  
-    // @LINE:22
-    def modifyTask: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.modifyTask",
-      """
-        function(id0) {
-          return _wA({method:"PATCH", url:"""" + _prefix + { _defaultPrefix } + """" + "application/tasks/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
-        }
-      """
-    )
-  
-    // @LINE:20
-    def projects: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.projects",
-      """
-        function(id0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "application/projects/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
-        }
-      """
-    )
-  
-    // @LINE:18
-    def createProject: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.createProject",
-      """
-        function(name0) {
-          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "application/projects/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("name", encodeURIComponent(name0))})
-        }
-      """
-    )
-  
-    // @LINE:17
-    def listProjects: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.listProjects",
-      """
-        function() {
-        
-          if (true) {
-            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "application"})
-          }
-        
         }
       """
     )
