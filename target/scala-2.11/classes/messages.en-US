@@ -1,4 +1,0 @@
-api.application=application-us
-home.hello= Hello
-app.name=The application {0} is running on port {1}.
-info.error=You aren''t logged in!
